@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Django Template</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <link rel="stylesheet" href="{% static'css/bootstrap/css/bootsrap.min.css'%}">
+</head>
+<body>
+<div class="navigation-section">
+    <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="{% url 'index' %}">HOME</a></li>
+    <li><a class="dropdown-item" href="{% url 'aboutus' %}">ABOUT US</a></li>
+    <li><a class="dropdown-item" href="{% url 'gallery' %}">GALLERY</a
+    ></li>
+      <li><a class="dropdown-item" href="% url 'contacts' %}">CONTACTS</a></li>
+  </ul>
+</li>
+
+</div>
+
+{% block title %}
+
+
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+<section class="footer-section">
+
+    <h4>This is my footer</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque aut consequatur cum, deserunt eius ex illum iure laudantium mollitia nisi nulla porro rem repudiandae saepe totam voluptatum. Aspernatur, sunt.</p>
+</section>
+
+</body>
+</html>
